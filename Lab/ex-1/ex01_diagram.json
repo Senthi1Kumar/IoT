@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 81.32, "left": -98.75, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -98.73,
+      "left": -6.33,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -16.76,
+      "left": 23.55,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "led1:C", "nano:GND.2", "green", [ "v0" ] ],
+    [ "led1:A", "r1:1", "white", [ "v0" ] ],
+    [ "r1:2", "nano:3", "white", [ "v0" ] ]
+  ]
+}
